@@ -31,3 +31,6 @@ para aprobar se requiere resolver el trabajo práctico en un 60% de forma correc
 Cada Docente informará la vía para subir el trabajo. Al momento de la entrega deberán informar: link a la web navegable y comentarios que consideren necesarios agregar a la entrega.
 
 Nota: si ya tenés un proyecto comenzado para este curso, podrás usarlo para esta entrega agregándole lo que falte para cumplir con los requisitos.
+
+# url producción
+[https://tpo-frontent-integrador-kevin-velasquez.netlify.app/](https://tpo-frontent-integrador-kevin-velasquez.netlify.app/)
