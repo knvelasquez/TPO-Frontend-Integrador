@@ -22,7 +22,7 @@ Nota: el TPO es individual pero en caso querer resolver el proyecto de forma gru
 ```
 Para más información, ver
 Seminario de Diseño Web: 
-[Seminario de Diseño Web ](https://pip.pypa.io/en/stable/)
+[Seminario de Diseño Web ](https://www.youtube.com/watch?v=fVkGt2tYIj0)
 
 ## Condiciones de aprobación
 para aprobar se requiere resolver el trabajo práctico en un 60% de forma correcta.
