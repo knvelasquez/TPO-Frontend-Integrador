@@ -1,0 +1,24 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 3,
+        "parser": "@babel/eslint-parser",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": false,
+            "modules": true
+        }
+    },
+    "plugins": [
+       // "@vue/cli-plugin-babel"
+    ],
+    "extends": [
+       // "plugin:vue/essential"
+       // "@vue/standard"
+    ],
+    "rules": {
+        "no-unused-vars": "off",
+        "no-useless-escape": "off"
+    },
+    "env": {}
+}
