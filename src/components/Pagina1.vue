@@ -1,5 +1,5 @@
 <template>
-<h1>Rick And Morty Carrousel</h1>
+<h1>Rick And Morty</h1>
     <!-- Full-width images with number and caption text -->
     <div class="slideshow-container">
         <div v-for="item in characters" :key="item.id" class="mySlides fade" style="text-align:center">
@@ -127,6 +127,7 @@ export default {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Number text (1/3 etc) */
