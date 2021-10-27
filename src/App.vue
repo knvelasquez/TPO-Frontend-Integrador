@@ -1,8 +1,8 @@
 <template>
     <nav>
-        <router-link to='/pagina1'>Página 1</router-link>
-        <router-link to='/pagina2'>Página 2</router-link>
-        <router-link to='/pagina3'>Página 3</router-link>
+        <router-link to='/pagina1'>Rick And Morty Carousel</router-link>
+        <!--<router-link to='/pagina2'>Página 2</router-link>
+        <router-link to='/pagina3'>Página 3</router-link>-->
         <router-link to='formulario'>Formulario</router-link>
     </nav>
     <router-view />
