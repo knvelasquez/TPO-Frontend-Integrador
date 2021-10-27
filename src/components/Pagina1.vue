@@ -69,7 +69,7 @@ export default {
     updated(){
         this.showSlides(1)
     },
-     mounted() {
+    mounted() {
         this.getCaracter()
     }
 }
