@@ -4,7 +4,7 @@
 
         <!-- Group: User-->
         <div class="form-group" id="group-username">
-            <label for="username" class="form-label">Usuario</label>
+            <label for="username" class="form-label"><i class="fas fa-user"></i> Usuario</label>
             <div class="form-group-input">
                 <input type="text" class="form-input" name="username" id="username" placeholder="Nombre de Usuario"/>
                 <i class="form-valid-state fas fa-times-circle"></i>
@@ -14,7 +14,7 @@
 
         <!-- Group: Name -->
         <div class="form-group" id="group-name">
-            <label for="name" class="form-label">Nombre</label>
+            <label for="name" class="form-label"><i class="fas fa-file-signature"></i> Nombre</label>
             <div class="form-group-input">
                 <input type="text" class="form-input" name="name" id="name" placeholder="Nombre Completo"/>
                 <i class="form-valid-state fas fa-times-circle"></i>
@@ -24,7 +24,7 @@
 
         <!-- Group: Password -->
         <div class="form-group" id="group-pass">
-            <label for="pass" class="form-label">Contraseña</label>
+            <label for="pass" class="form-label"><i class="fas fa-key"></i> Contraseña</label>
             <div class="form-group-input">
                 <input type="password" class="form-input" name="pass" id="pass" placeholder="Contraseña"/>
                 <i class="form-valid-state fas fa-times-circle"></i>
@@ -34,7 +34,7 @@
 
         <!-- Group: Password2 -->
         <div class="form-group" id="group-pass2">
-            <label for="pass2" class="form-label">Repetir Contraseña</label>
+            <label for="pass2" class="form-label"><i class="fas fa-lock"></i> Repetir Contraseña</label>
             <div class="form-group-input">
                 <input type="password" class="form-input" name="pass2" id="pass2" placeholder="Repetir Contraseña"/>
                 <i class="form-valid-state fas fa-times-circle"></i>
@@ -44,7 +44,7 @@
 
         <!-- Group: Email -->
         <div class="form-group" id="group-email">
-            <label for="email" class="form-label">Correo Electrónico</label>
+            <label for="email" class="form-label"><i class="far fa-envelope"></i> Correo Electrónico</label>
             <div class="form-group-input">
                 <input type="email" class="form-input" name="email" id="email" placeholder="Correo Electrónico"/>
                 <i class="form-valid-state fas fa-times-circle"></i>
@@ -54,7 +54,7 @@
 
         <!-- Group: Phone -->
         <div class="form-group" id="group-phone">
-            <label for="phone" class="form-label">Teléfono</label>
+            <label for="phone" class="form-label"><i class="fas fa-mobile-alt"></i> Teléfono</label>
             <div class="form-group-input">
                 <input type="text" class="form-input" name="phone" id="phone" placeholder="Número Telefónico"/>
                 <i class="form-valid-state fas fa-times-circle"></i>
