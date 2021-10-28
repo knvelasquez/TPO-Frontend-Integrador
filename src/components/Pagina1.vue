@@ -4,7 +4,7 @@
     <div class="slideshow-container">
         <div v-for="item in characters" :key="item.id" class="mySlides fade" style="text-align:center">
             <div class="numbertext">1 / 3</div>
-            <img :src="item.image">
+            <img :src="item.image" style="height:100%">
             <div class="text">{{item.name}}</div>
         </div>
 
@@ -84,11 +84,13 @@ export default {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    height:70vh;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  height:100%;
 }
 
 /* Next & previous buttons */
@@ -120,7 +122,7 @@ export default {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #8339aa;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -128,6 +130,8 @@ export default {
   width: 100%;
   text-align: center;
   font-weight: bold;
+  bottom: -30px;
+  position: absolute;
 }
 
 /* Number text (1/3 etc) */
@@ -151,6 +155,13 @@ export default {
   transition: background-color 0.6s ease;
 }
 
+.prev, .next{
+  color:#8339aa;
+}
+.prev:hover, .next:hover {
+    background-color: #00a59d;
+    color: #fff;
+}
 .active, .dot:hover {
   background-color: #717171;
 }
