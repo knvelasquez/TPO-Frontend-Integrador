@@ -81,13 +81,6 @@
     </form>
 </template>
 <style>
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        font-family: 'Roboto', sans-serif;
-        background: #fff;
-    }
     main {
         max-width: 800px;
         width: 90%;
@@ -277,7 +270,6 @@
         }
     }
 
-
     /* ----------- Galaxy ----------- */
     /* Portrait */
     @media screen
@@ -420,7 +412,6 @@
 <script>
 export default {
     mounted() {
-        console.log('Form has been mounted');
         const form = document.getElementById('form');
         const inputs = document.querySelectorAll('#form input');
         const exp = {

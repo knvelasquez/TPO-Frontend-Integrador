@@ -30,41 +30,49 @@
 </script>
 
 <style>
-  @import './assets/fontawesome-free-5.15.4-web/css/all.css';
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background-color: #00a59d;
-    overflow: hidden;
-  }
+    @import './assets/fontawesome-free-5.15.4-web/css/all.css';
+    /* Add a black background color to the top navigation */
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #fff;
+    }
+    .topnav {
+      background-color: #00a59d;
+      overflow: hidden;
+    }
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
   }
 
   /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #16847f;
-    color: #fff;
+    .topnav a:hover {
+      background-color: #16847f;
+      color: #fff;
   }
 
   /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #16847f;
-    color: #fff;
+    .topnav a.active {
+      background-color: #16847f;
+      color: #fff;
   }
-  .nav-autor{
-    text-align: right;font-size: .8em;
+    .nav-autor{
+      text-align: right;font-size: .8em;
   }
-  .nav-enlace{
-    text-decoration:none;
-    color:#00a59d;
-    font-weight: bold;
+    .nav-enlace{
+      text-decoration:none;
+      color:#00a59d;
+      font-weight: bold;
+      padding: 3px;
   }
 
   @media screen
