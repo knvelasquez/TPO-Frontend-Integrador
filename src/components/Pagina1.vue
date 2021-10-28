@@ -3,7 +3,7 @@
     <!-- Full-width images with number and caption text -->
     <div class="slideshow-container">
         <div v-for="item in characters" :key="item.id" class="mySlides fade" style="text-align:center">
-            <div class="numbertext">1 / 3</div>
+            <!--<div class="numbertext">1 / 3</div>-->
             <img :src="item.image" style="height:100%">
             <div class="text">{{item.name}}</div>
         </div>
@@ -183,4 +183,24 @@ export default {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* ----------- Galaxy ----------- */
+    /* Portrait */
+    @media screen
+    and (device-width: 360px)
+    and (device-height: 640px)
+    and (orientation: portrait) {
+        .slideshow-container{
+          height:auto;
+        }
+    }
+
+    /* Landscape */
+    @media screen
+    and (device-width: 640px)
+    and (device-height: 360px)
+    and (orientation: landscape) {
+       .slideshow-container{
+          height:auto;
+        }
+    }
 </style>
