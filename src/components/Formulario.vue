@@ -63,7 +63,7 @@
         </div>
 
         <!-- Group: Terms and Conditions-->
-        <div class="form-group" id="group-terms">
+        <div class="form-group form-group-label-terms" id="group-terms">
             <label class="form-label">
                 <input class="form-chk" type="checkbox" name="temrs" id="terms"/>
                 Acepto los Términos y Condiciones
@@ -75,7 +75,7 @@
         </div>
 
         <div class="form-group form-group-btn-enviar">
-            <button type="submit" class="Formulario__btn"> Enviar</button>
+            <button type="submit" class="form-btn"> Enviar</button>
             <p class="Formulario__mensaje-exito" id="Formulario__mensaje-exito">Formulario enviado exitósamente</p>
         </div>
     </form>
@@ -100,8 +100,8 @@
     }
     .form{
         display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:20px;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:80px;
     }
     .form-label{
         display:block;
@@ -154,7 +154,10 @@
     .form-group-terms,
     .Formulario__mensaje,
     .form-group-btn-enviar{
-        grid-column:span 2;
+        grid-column:span 3;
+    }
+    .form-group-label-terms{
+        grid-column: 2
     }
     .Formulario__mensaje{
         height:45px;
@@ -175,7 +178,7 @@
         flex-direction:column;
         align-items:center;
     }
-    .Formulario__btn{
+    .form-btn{
         height:45px;
         line-height:45px;
         width:30%;
@@ -187,7 +190,7 @@
         cursor:pointer;
         transition:.1 ease all;
     }
-    .Formulario__btn:hover{
+    .form-btn:hover{
         box-shadow:3px 0px 30px rgba(163,163,163,1)
     }
     .Formulario__mensaje-exito{
@@ -213,19 +216,204 @@
         border:3px solid #bb2929;
     }
 
-    @media screen and (max-width: 800px) {
-        .Formulario {
+    /* ----------- iPad ----------- */
+    /* Portrait */
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait){
+        .form {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .form-group-terms,
+        .Formulario__mensaje,
+        .form-group-btn-enviar {
+            grid-column: span 2;
+            width: 60%;
+            margin: auto;
+        }
+
+        .form-group-label-terms{
+            grid-column: span 2;
+        }
+
+        .form-btn {
+            width: 100%;
+        }
+
+        .form-label{
+            text-align:center;
+        }
+    }
+
+    /* Landscape */
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape) {
+        .form {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .form-group-terms,
+        .Formulario__mensaje,
+        .form-group-btn-enviar {
+            grid-column: span 2;
+            width: 60%;
+            margin: auto;
+        }
+
+        .form-group-label-terms{
+            grid-column: span 2;
+        }
+
+        .form-btn {
+            width: 100%;
+        }
+
+        .form-label{
+            text-align:center;
+        }
+    }
+
+
+    /* ----------- Galaxy ----------- */
+    /* Portrait */
+    @media screen
+    and (device-width: 360px)
+    and (device-height: 640px)
+    and (orientation: portrait) {
+        h1{
+            font-size:1.5em;
+        }
+        .form {
+            display: block;
             grid-template-columns: 1fr;
+            line-height: 2em;
         }
 
         .form-group-terms,
         .Formulario__mensaje,
         .form-group-btn-enviar {
             grid-column: 1;
+            height: auto;
+            font-size: .9em;
+            line-height: 1.5em;
+            text-align: center;
+            padding: 10px;
         }
 
-        .Formulario__btn {
+        .form-btn {
             width: 100%;
+        }
+
+        .form-label{
+            text-align:center;
+            font-size:0.9em;
+        }
+        .form-input-error-active {
+            display: block;
+            text-align: center;
+            color: #bb2929;
+            font-weight: bold;
+            font-size: .9em;
+            line-height: 1.6em;
+            margin: 3px;
+        }
+    }
+
+    /* Landscape */
+    @media screen
+    and (device-width: 640px)
+    and (device-height: 360px)
+    and (orientation: landscape) {
+        h1{
+            font-size:1.5em;
+        }
+        .form {
+            display: block;
+            grid-template-columns: 1fr;
+            line-height: 2em;
+        }
+
+        .form-group-terms,
+        .Formulario__mensaje,
+        .form-group-btn-enviar {
+            grid-column: 1;
+            height: auto;
+            font-size: .9em;
+            line-height: 1.5em;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .form-btn {
+            width: 100%;
+        }
+
+        .form-label{
+            text-align:center;
+            font-size:0.9em;
+        }
+        .form-input-error-active {
+            display: block;
+            text-align: center;
+            color: #bb2929;
+            font-weight: bold;
+            font-size: .9em;
+            line-height: 1.6em;
+            margin: 3px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .form {
+            grid-template-columns: 1fr;
+            display:block;
+        }
+
+        .form-group-terms,
+        .Formulario__mensaje,
+        .form-group-btn-enviar {
+            grid-column: span 2;
+            width: 50%;
+            margin: auto;
+        }
+
+        .form-btn {
+            width: 100%;
+        }
+
+        .form-label{
+            text-align:center;
+        }
+        .form-group-label-terms {
+            grid-column: span 2;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .form {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .form-group-terms,
+        .Formulario__mensaje,
+        .form-group-btn-enviar {
+            grid-column: span 2;
+            width: 50%;
+            margin: auto;
+        }
+
+        .form-btn {
+            width: 100%;
+        }
+
+        .form-label{
+            text-align:center;
+        }
+        .form-group-label-terms {
+            grid-column: span 2;
         }
     }
 </style>
