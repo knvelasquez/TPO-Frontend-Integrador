@@ -1,9 +1,18 @@
 <template>
     <nav class="topnav">
-        <router-link to='/pagina1'>Rick And Morty</router-link>
-        <router-link to='/pagina2'>Episodios</router-link>
+        <router-link to='/pagina1'>
+          <i class="fas fa-rocket"></i>
+          Rick And Morty
+        </router-link>
+        <router-link to='/pagina2'>
+          <i class="fas fa-tv"></i>
+           Episodios
+        </router-link>
         <!--<router-link to='/pagina3'>Página 3</router-link>-->
-        <router-link to='formulario'>Formulario</router-link>
+        <router-link to='formulario'>
+          <i class="fas fa-clipboard-check"></i>
+           Formulario
+          </router-link>
       </nav>
     <router-view />
 </template>
