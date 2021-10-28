@@ -14,9 +14,14 @@
            Formulario
           </router-link>
       </nav>
+      <div class="nav-autor">
+          <a href="https://github.com/knvelasquez/TPO-Frontend-Integrador" target="_blank" class="nav-enlace">
+            <i class="fab fa-github"></i>
+            Kevin Velásquez
+          </a>
+      </div>
     <router-view />
-</template>
-
+  </template>
 <script>
   export default {
     name: 'App',
@@ -26,14 +31,6 @@
 
 <style>
   @import './assets/fontawesome-free-5.15.4-web/css/all.css';
-  /*#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }*/
   /* Add a black background color to the top navigation */
   .topnav {
     background-color: #00a59d;
@@ -60,5 +57,13 @@
   .topnav a.active {
     background-color: #16847f;
     color: #fff;
+  }
+  .nav-autor{
+    text-align: right;font-size: .8em;
+  }
+  .nav-enlace{
+    text-decoration:none;
+    color:#00a59d;
+    font-weight: bold;
   }
 </style>
