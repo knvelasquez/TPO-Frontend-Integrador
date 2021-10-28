@@ -183,24 +183,50 @@ export default {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* ----------- Galaxy ----------- */
-    /* Portrait */
-    @media screen
-    and (device-width: 360px)
-    and (device-height: 640px)
-    and (orientation: portrait) {
-        .slideshow-container{
-          height:auto;
-        }
-    }
 
-    /* Landscape */
-    @media screen
-    and (device-width: 640px)
-    and (device-height: 360px)
-    and (orientation: landscape) {
-       .slideshow-container{
-          height:auto;
-        }
-    }
+@media screen
+    and (min-width:320px)
+    and (max-width:374px)
+    and (orientation: portrait) {
+     .slideshow-container{
+        height:auto;
+      }
+}
+
+@media screen
+    and (min-width:375px)
+    and (max-width:424px)
+    and (orientation: portrait) {
+    .slideshow-container{
+        height:auto;
+      }
+}
+
+@media screen
+    and (min-width:425px)
+    and (max-width:767px)
+    and (orientation: portrait) {
+     .slideshow-container{
+        height:auto;
+      }
+}
+
+@media screen
+    and (min-width:768px)
+    and (max-width:1023px)
+    /*and (orientation: portrait)*/
+     {
+    .slideshow-container{
+        height:72vh;
+      }
+}
+
+@media screen
+    and (min-width:1024px)
+    and (max-width:1440px)
+     {
+    .slideshow-container{
+        height:72vh;
+      }
+}
 </style>
