@@ -156,5 +156,42 @@ th {
     color: #fff;
     font-weight: bold;
 }
+@media screen
+    and (min-width:320px)
+    and (max-width:374px)
+    and (orientation: portrait) {
+      #my-table {
+       font-size: .5em;
+      }
+  }
 
+  @media screen
+    and (min-width:375px)
+    and (max-width:424px)
+    and (orientation: portrait) {
+      #my-table {
+       font-size: .7em;
+      }
+  }
+
+  @media screen
+    and (min-width:425px)
+    and (max-width:767px)
+    and (orientation: portrait) {
+      #my-table {
+       font-size: .8em;
+      }
+  }
+
+  @media screen
+    and (min-width:768px)
+    and (max-width:1023px){
+
+  }
+
+  @media screen
+    and (min-width:1024px)
+    and (max-width:1440px){
+
+  }
 </style>
