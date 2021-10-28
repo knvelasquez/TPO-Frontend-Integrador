@@ -10,7 +10,7 @@
                     <th style="width: 25%;">Episodio</th>
                     <th style="width: 25%;">Nombre</th>
                     <th style="width: 25%;">Fecha Estreno</th>
-                    <th>Personajes</th>
+                    <th>Cantidad Total de Personajes</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,7 +49,7 @@ export default {
             return data.results
         },
         setTest:function(){
-            const rowsPerPage = 10;
+            const rowsPerPage = 5;
             const rows = $('#my-table tbody tr');
             const rowsCount = rows.length;
             const pageCount = Math.ceil(rowsCount / rowsPerPage); // avoid decimals
